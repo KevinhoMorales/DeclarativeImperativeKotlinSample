@@ -33,9 +33,15 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
+    // VIEWMODEL
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
+    // VIEWMODEL
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
